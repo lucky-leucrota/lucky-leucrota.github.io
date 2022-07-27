@@ -1,0 +1,22 @@
+site_name: Dis-Code Documentation
+
+theme:
+  name: null
+  custom_dir: 'cinder'
+  colorscheme: dracula
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Algorithems:
+    - Introduction: algorithems\index.md
+
+repo_url: https://github.com/Lucky-Leucrota/Documentation
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Lucky-Leucrota/
+      name: Github
+
+copyright: Copyright &copy; 2022 <a href="https://github.com/Lucky-Leucrota">Lucky-Leucrota</a>
