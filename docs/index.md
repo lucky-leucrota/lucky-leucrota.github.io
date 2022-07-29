@@ -6,9 +6,9 @@ Here, you will be finding out on
 
 ## Table Of Contents
 
-### [Home](/Documentation/)
+### [Home](/
 
-### [About](/Documentation/About/)
+### [About](/About/)
 
 ### Algorithems
-- [Introduction](/Documentation/algorithems/)
+- [Introduction](/algorithems/)
