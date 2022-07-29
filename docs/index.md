@@ -6,7 +6,7 @@ Here, you will be finding out on
 
 ## Table Of Contents
 
-### [Home](/
+### [Home](/)
 
 ### [About](/About/)
 
