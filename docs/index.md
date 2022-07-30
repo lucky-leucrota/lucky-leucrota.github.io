@@ -12,3 +12,5 @@ Here, you will be finding out on
 
 ### Algorithems
 - [Introduction](/algorithems/)
+
+~ Author: [Sas2k](https://github.com/Sas2k)

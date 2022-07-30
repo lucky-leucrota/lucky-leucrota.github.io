@@ -8,8 +8,13 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
-  - Algorithems:
-    - Introduction: algorithems\index.md
+  - Writing-Python-On-DisCode: Writing-Python-Code.md
+  - Algorithms:
+    - Introduction: algorithms\index.md
+    - Caeser-Cipher: algorithms\caeser-cipher.md
+    - Monoalphabetic-Cipher: algorithms\monoalphabetic-cipher.md
+    - Transposition-Cipher: algorithms\transposition-cipher.md
+    - Vingenere-Cipher: algorithms\vingenere-cipher.md
 
 repo_url: https://github.com/Lucky-Leucrota/
 

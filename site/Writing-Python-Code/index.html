@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../img/favicon.ico">
 
     
-    <title>Introduction - Dis-Code Documentation</title>
+    <title>Writing-Python-On-DisCode - Dis-Code Documentation</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -81,13 +81,43 @@
                 
                 
                 
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithems <b class="caret"></b></a>
+                    <li class="active">
+                        <a href="./">Writing-Python-On-DisCode</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithms <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li class="active">
-    <a href="./">Introduction</a>
+<li >
+    <a href="../algorithms/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../algorithms/caeser-cipher/">Caeser-Cipher</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../algorithms/monoalphabetic-cipher/">Monoalphabetic-Cipher</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../algorithms/transposition-cipher/">Transposition-Cipher</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../algorithms/vingenere-cipher/">Vingenere-Cipher</a>
 </li>
 
                         
@@ -108,13 +138,13 @@
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../algorithms/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/Lucky-Leucrota/edit/master/docs/algorithems/index.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/Lucky-Leucrota/edit/master/docs/Writing-Python-Code.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -126,13 +156,50 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#algorithems">Algorithems</a></li>
+        <li class="first-level active"><a href="#writing-python-code-in-dis-code">Writing Python Code in Dis-Code</a></li>
+            <li class="second-level"><a href="#writing-it">Writing it.</a></li>
+                
+            <li class="second-level"><a href="#how-this-works">How this works??</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="algorithems">Algorithems</h1>
-<p>Here you will find details about the encryption algorithems, the keys and ways to decrypt them</p></div>
+<h1 id="writing-python-code-in-dis-code">Writing Python Code in Dis-Code</h1>
+<p>Here, you will learn how to run python code in the Dis-Code app.</p>
+<h2 id="writing-it">Writing it.</h2>
+<p>To code python on Dis-Code, do you see a black Textarea next to the message area. That is actually the area where you write code(<em>It has even syntax highlighting!!</em>)Now let's test it out shall we?</p>
+<p>ok let's make a simple program where the program will ask a number and display the result.
+For that we can write something like this</p>
+<pre><code class="language-python">number = input(&quot;Enter a number please&quot;)
+print(number)
+</code></pre>
+<p>After that click the run button under the code area.
+you will get an alert which has a textbox. which where you would enter the input data. like the below image.</p>
+<p><img alt="Test-Input" src="../images/test-input.png" /></p>
+<p>After you entered that you should get an alert like this.</p>
+<p><img alt="Success-Banner" src="../images/Success.png" /></p>
+<p>Then check the developer console to see the output</p>
+<blockquote>
+<p>Quick Side Bar: To access the Dev-Console you either press Ctrl+Shift+j or go to More Tools -&gt; Developer Console on chrome.</p>
+</blockquote>
+<p>The output should be Like this.</p>
+<p><img alt="Output on Dev-Console" src="../images/Output.png" /></p>
+<p>so that's pretty much it.</p>
+<blockquote>
+<p>Extra: You have the entire standard library with you in this. so you can use from random to requests in the script.</p>
+</blockquote>
+<h2 id="how-this-works">How this works??</h2>
+<p>Now you maybe wondering. <em>HOW THE HECK IS THIS WORKING IN THE BROWSER!!</em>
+well the answer comes in a thing called <a href="https://pyodide.org/en/stable/">Pyodide</a>.
+It's a JS library of which will run python code using WASM(which is Web Assembly BTW.)</p>
+<p>from it's page it says that,</p>
+<blockquote>
+<p>Pyodide is a Python distribution for the browser and Node.js based on WebAssembly.</p>
+</blockquote>
+<p>so there you have it folks!</p>
+<p>so now Have a good day hacking, Thanks for reading!</p>
+<p>~ Author: <a href="https://github.com/Sas2k">Sas2k</a></p></div>
         
         
     </div>
