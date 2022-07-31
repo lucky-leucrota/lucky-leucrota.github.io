@@ -157,14 +157,90 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#vingenere-cipher">Vingenere Cipher</a></li>
+            <li class="second-level"><a href="#how-it-works">How it works</a></li>
+                
+            <li class="second-level"><a href="#keys-and-help-on-deciphering">Keys and Help on deciphering</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
 <h1 id="vingenere-cipher">Vingenere Cipher</h1>
-<blockquote>
-<p>🛑 Still Under Contruction 🛑</p>
-</blockquote></div>
+<p>The <strong>Vigenère cipher</strong> (French pronunciation: ​[viʒnɛːʁ]) is a method of encrypting alphabetic text by using a series of interwoven <a href="../caeser-cipher">Caesar ciphers</a>, based on the letters of a keyword. It employs a form of polyalphabetic substitution. So it's like a complicated brother to Caeser Cipher.</p>
+<p>First introduced by Giovan Battista Bellaso in 1553, the cipher is easy to understand and implement.
+But it resisted all attempts to break it until 1863.</p>
+<p>In the 19th century, it was accidently attributed to Blaise de Vigenère. That's how it accquired it's present name.</p>
+<p>(Source: Wikipedia + Me)</p>
+<h2 id="how-it-works">How it works</h2>
+<p>So how it works basicly is like this,</p>
+<p>The encryption of the normal text is done by a table called the Vingenere Square.</p>
+<ul>
+<li>It consists of 26 alphabets, but each of them is shifted 1 more then the last one.</li>
+<li>At different points of the encryption, it uses different alphabets.</li>
+<li>The alphabet that's used depends on a keyword</li>
+</ul>
+<p><img alt="Vingenere-Cipher" src="../../images/Vigenere-square.png" /></p>
+<p>^ The vingenere cipher</p>
+<pre><code>Plain-Text: attackatdawn
+keyword: LEMON
+repeated-keyword: LEMONLEMONLE
+Encrypted-Text: LXFOPVEFRNHR
+</code></pre>
+<p>So, that's how it works.</p>
+<h2 id="keys-and-help-on-deciphering">Keys and Help on deciphering</h2>
+<p>The key, that we used to encrypt is</p>
+<pre><code>luckyleucrota
+</code></pre>
+<p>yeah, it's literally our team name.</p>
+<p>now let's write a small function to encrypt and decipher it. (This one is only here to give you an idea.)</p>
+<pre><code class="language-python">def generateKey(string, key): # -&gt; This function will make the keyword fit the message
+    key = list(key)
+    if len(string) == len(key):
+        return(key)
+    else:
+        for i in range(len(string) -
+                       len(key)):
+            key.append(key[i % len(key)])
+    return(&quot;&quot; . join(key))
+
+def Encrypt(string, key): # -&gt; This is the function to Encrypt the message
+    cipher_text = []
+    for i in range(len(string)):
+        x = (ord(string[i]) +
+             ord(key[i])) % 26
+        x += ord('A')
+        cipher_text.append(chr(x))
+    return(&quot;&quot; . join(cipher_text))
+
+def Decrypt(cipher_text, key): # -&gt; This is the function to Decrypt the message
+    orig_text = []
+    for i in range(len(cipher_text)):
+        x = (ord(cipher_text[i]) -
+             ord(key[i]) + 26) % 26
+        x += ord('A')
+        orig_text.append(chr(x))
+    return(&quot;&quot; . join(orig_text))
+
+string = &quot;attackatdawn&quot;
+keyword = &quot;LEMON&quot;
+key = generateKey(string.upper(), keyword)
+cipher_text = Encrypt(string.upper(), key)
+decrypted_text = Decrypt(cipher_text, key)
+
+print(f&quot;&quot;&quot;
+keyword: {keyword},
+key: {key},
+encrypted-message: {cipher_text},
+decrypted-message: {decrypted_text}.
+&quot;&quot;&quot;)
+</code></pre>
+<p>(Source of (some) the Code: GeekforGeeks)</p>
+<p>Now, if run this you would get this. output.</p>
+<p><img alt="Vingenere-Cipher-Output" src="../../images/Vingenere-Cipher-Output.png" /></p>
+<p>and that's basicly it for Vingenere Cipher. I'm pretty sure that there are more variations and decryptions out there.
+So go and look for them. They're at your finger tips.</p>
+<p>Thanks For Reading</p>
+<p>~ <a href="https://github.com/Sas2k">Sas2k</a></p></div>
         
         
     </div>
