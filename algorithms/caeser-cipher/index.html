@@ -157,11 +157,74 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#caeser-cipher">Caeser Cipher</a></li>
+            <li class="second-level"><a href="#how-it-works">How it works</a></li>
+                
+            <li class="second-level"><a href="#keys-and-help-on-deciphering">Keys and Help on deciphering</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="caeser-cipher">Caeser Cipher</h1></div>
+<h1 id="caeser-cipher">Caeser Cipher</h1>
+<p>The Caeser Cipher, also know as the Shift Cipher is named after the roman emperor <em>Julius Caeser</em> (Who used it in his private correspondence.).
+It is one of the most simplest and widely known encryption technique, The encryption step performed by the "Caeser Cipher" Is used on more complex encryption. Like the Vingener Cipher and etc...</p>
+<h2 id="how-it-works">How it works</h2>
+<p>How the caeser cipher works is very simple. it shifts the letters an amount left or right. like for example. a left shift of 5, F would replace A, G would replace B and so on.</p>
+<table>
+<thead>
+<tr>
+<th>Text-Type</th>
+<th>Alphabet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plaint-Text</td>
+<td>A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z</td>
+</tr>
+<tr>
+<td>Cipher-Text</td>
+<td>F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, A, B, C, D, E</td>
+</tr>
+</tbody>
+</table>
+<p>So a message saying "Hello" would look like this, 
+    Mjqqt</p>
+<p>So, that's the basics of how it works.</p>
+<blockquote>
+<p>For extra info: Our Caeser Cipher Contains, Ascii-Uppercase-letters + Ascii-Lowercase-letters + Ascii+digits</p>
+</blockquote>
+<h2 id="keys-and-help-on-deciphering">Keys and Help on deciphering</h2>
+<p>Since, We're nice people we're gonna give you the key we used it's
+    Left shift of 14.</p>
+<p>But, you can just Brute-Force. It's totally up to you.
+You can also view our <a href="https://github.com/lucky-leucrota/cj9-lucky-leucrota/blob/Main/src/routes/algorithms.py">algorithms.py</a> file in our repository to get an idea as well.</p>
+<p>Now let's write a simple implementation of a decryption script of a caeser cipher.</p>
+<pre><code class="language-python">import string
+
+message = 'Mjqqt' #encrypted message we used above example
+LETTERS = string.ascii_lowercase + string.ascii_uppercase + string.digits
+
+for key in range(len(LETTERS)):
+   translated = ''
+   for symbol in message:
+      if symbol in LETTERS:
+         num = LETTERS.find(symbol)
+         num = num - key
+         if num &lt; 0:
+            num = num + len(LETTERS)
+         translated = translated + LETTERS[num]
+      else:                                                          
+         translated = translated + symbol
+   print('Hacking key #%s: %s' % (key, translated))
+</code></pre>
+<p>The above is a brute force caeser cipher decryption.
+Output of the above should look like this.</p>
+<p><img alt="Brute-Force-Output" src="../../images/Brute-Force-Caeser-Cipher.png" /></p>
+<p>As as you can see the highlighted part shows the unencrypted message.</p>
+<p>And that's it you have learn everything regarding Caeser Cipher.
+Thanks for reading!</p>
+<p>~ Author- <a href="https://github.com/Sas2k">Sas2k</a></p></div>
         
         
     </div>
