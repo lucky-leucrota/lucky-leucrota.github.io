@@ -1,4 +1,4 @@
-# Welcome to Dis-Code Documentation (Ver Dev.4.0.1)
+# Welcome to Dis-Code Documentation
 
 Here, you will be finding out on
 - How to write algorithm's to decipher to code
@@ -10,7 +10,8 @@ Here, you will be finding out on
 
 ### [About](/About/)
 
-### Algorithems
-- [Introduction](/algorithems/)
+### [Algorithems-Introduction](/algorithems/)
+
+### [Writing-Python-On-DisCode](/Writing-Python-Code)
 
 ~ Author: [Sas2k](https://github.com/Sas2k)

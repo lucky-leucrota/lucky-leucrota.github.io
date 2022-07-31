@@ -15,6 +15,4 @@ For the PyDis CodeJam(9!) 2022
 
 [hsiam261](https://github.com/hsiam261) - _Encryption Algorithms_
 
-[infinityinfinite](https://github.com/infinityinfinite) - _Encryption Algorithms_
-
 ~ Author: [Sas2k](https://github.com/Sas2k)

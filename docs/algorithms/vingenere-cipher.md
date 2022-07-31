@@ -42,6 +42,8 @@ yeah, it's literally our team name.
 
 now let's write a small function to encrypt and decipher it. (This one is only here to give you an idea.)
 
+You can also checkout our implementation of this in the [algorithms.py](https://github.com/lucky-leucrota/cj9-lucky-leucrota/blob/Main/src/routes/algorithms.py) to get an idea of it.
+
 ```python
 def generateKey(string, key): # -> This function will make the keyword fit the message
     key = list(key)

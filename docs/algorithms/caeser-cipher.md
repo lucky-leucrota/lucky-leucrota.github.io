@@ -22,7 +22,7 @@ So, that's the basics of how it works.
 ## Keys and Help on deciphering
 
 Since, We're nice people we're gonna give you the key we used it's
-    left shift of 14.
+    **left** shift of **14**.
 
 But, you can just Brute-Force. It's totally up to you.
 You can also view our [algorithms.py](https://github.com/lucky-leucrota/cj9-lucky-leucrota/blob/Main/src/routes/algorithms.py) file in our repository to get an idea as well.
