@@ -17,10 +17,10 @@ Here we know that the encryption used is the Vingenere cipher, so we can write s
 
 ## The algorithms
 
-- [Caeser Cipher 🍕](/Algorithms/Caeser-Cipher)
-- [Monoalphabetic Cipher 🅰](/Algorithms/Monoalphabetic-Cipher)
-- [Transposition Cipher 🚇](/Algorithms/Transposition-Cipher)
-- [Vingenere-Cipher 📼](/Algorithms/Vingenere-Cipher)
+- [Caeser Cipher 🍕](/Algorithms/caeser-cipher)
+- [Monoalphabetic Cipher 🅰](/Algorithms/monoalphabetic-cipher)
+- [Transposition Cipher 🚇](/Algorithms/transposition-cipher)
+- [Vingenere-Cipher 📼](/Algorithms/vingenere-cipher)
 
 
 ~ Author: [Sas2k](https://github.com/Sas2k)
