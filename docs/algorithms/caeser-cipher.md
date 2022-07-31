@@ -1,7 +1,7 @@
 # Caeser Cipher
 
 The Caeser Cipher, also know as the Shift Cipher is named after the roman emperor _Julius Caeser_ (Who used it in his private correspondence.).
-It is one of the most simplest and widely known encryption technique, The encryption step performed by the "Caeser Cipher" Is used on more complex encryption. Like the Vingener Cipher and etc...
+It is one of the most simplest and widely known encryption technique, The encryption step performed by the "Caeser Cipher" Is used on more complex encryption. Like the Vingenere Cipher and etc...
 
 ## How it works
 
@@ -22,7 +22,7 @@ So, that's the basics of how it works.
 ## Keys and Help on deciphering
 
 Since, We're nice people we're gonna give you the key we used it's
-    Left shift of 14.
+    left shift of 14.
 
 But, you can just Brute-Force. It's totally up to you.
 You can also view our [algorithms.py](https://github.com/lucky-leucrota/cj9-lucky-leucrota/blob/Main/src/routes/algorithms.py) file in our repository to get an idea as well.
