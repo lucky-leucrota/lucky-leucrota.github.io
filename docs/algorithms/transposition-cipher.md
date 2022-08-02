@@ -8,6 +8,6 @@
 
 ## Keys and Help on Deciphering
 
-The key used for encrypting the messgges is "luckyleucrota" again.
+The key used for encrypting the messges is "luckyleucrota" again.
 
 > ⚠ This section is still in development ⚠

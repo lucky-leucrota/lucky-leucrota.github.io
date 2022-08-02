@@ -10,7 +10,7 @@ Here, you will be finding out on
 
 ### [About](/About/)
 
-### [Algorithems-Introduction](/algorithems/)
+### [algorithms-Introduction](/algorithms/)
 
 ### [Writing-Python-On-DisCode](/Writing-Python-Code)
 

@@ -5,4 +5,4 @@ this contains,
 
 - How to use this app
 - How to code in the UI
-- Algorithem Info
+- algorithm Info

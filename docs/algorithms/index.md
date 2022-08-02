@@ -1,15 +1,15 @@
-# Encryption Algorithems
+# Encryption algorithms
 
 ## Introduction
 
-Here you will find details about the encryption algorithems, the keys and ways to decrypt them.
+Here you will find details about the encryption algorithms, the keys and ways to decrypt them.
 
 Some of the Encryption Algorithms used here are,
 
     - Caeser Cipher
     - Monoalphabetic Cipher
 
-You can always findout which encryption method is used, because the encrption method is always displayed next to the message like below,
+You can always findout which encryption method is used, because the encryption method is always displayed next to the message like below,
 
 ![Example-Message](../images/example-message-1.png)
 
